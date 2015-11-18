@@ -142,7 +142,7 @@
                                     		context="{'statement_id': id}">
                                         </field>
                                     </page>
-                                    <page string="Goods Refund Purchase - Section 4">
+                                    <page string="Services Refund Purchase - Section 4">
                                     	<field name="purchase_section4_ids" nolabel="1" 
                                     		context="{'statement_id': id}">
                                         </field>
