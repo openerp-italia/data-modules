@@ -30,7 +30,7 @@
     'depends': [
         'l10n_it_intrastat_statement',
         'report',
-        'l10n_it_report_instrastat_parser'],
+        'l10n_it_report_intrastat_parser'],
     'data': [
         'report/report_intrastat_mod1.xml',
         'report/intrastat_mod1_bis.xml',
