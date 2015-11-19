@@ -47,6 +47,7 @@
 	                            <field name="special_cases" />
 	                            <field name="custom_id" />
 	                            <field name="vat_delegate" />
+	                            <field name="name_delegate" />
 	                        </group>
                         </group>
                         <newline/>
