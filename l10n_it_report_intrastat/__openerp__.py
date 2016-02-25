@@ -22,7 +22,7 @@
 
 {
     'name': 'Report Intrastat Qweb',
-    'version': '0.1',
+    'version': '0.2',
     'category': 'account',
     'author': 'Apulia Software S.r.l.',
     'website': 'www.apuliasoftware.it',
