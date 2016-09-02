@@ -111,7 +111,7 @@
                             </tr>
                             <t t-set="total" t-value="0"/>
                             <tr t-foreach="o.sale_section1_ids" t-as="l">
-                                <td t-esc="l.progressive"></td>
+                                <td t-esc="l.sequence"></td>
                                 <td t-esc="l.country_partner_id.code"></td>
                                 <td t-esc="l.vat_code"></td>
                                 <td t-esc="l.amount_euro"></td>
