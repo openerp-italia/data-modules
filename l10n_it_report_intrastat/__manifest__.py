@@ -37,7 +37,6 @@
         'report/report_intrastat_mod2.xml',
         'report/report_intrastat_mod2_bis.xml',
         'reports.xml', ],
-    'active': False,
-    'installable': False
+    'installable': True
 }
 

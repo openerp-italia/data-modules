@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 ##############################################################################
-#    
+#
 #    Author: Alessandro Camilli (a.camilli@openforce.it)
 #    Copyright (C) 2015
 #    Apulia Software srl - info@apuliasoftware.it - www.apuliasoftware.it
@@ -23,12 +23,13 @@
 
 {
     'name': 'Account - Intrastat Data',
-    'version': '0.1',
+    'version': '10.0',
     'category': 'Account',
     'description': """
     Datas for Intrastat
     """,
-    'author': 'Openforce di Alessandro Camilli per Apulia Software srl',
+    'author': 'Openforce di Alessandro Camilli per Apulia Software srl'
+        ', Lara Baggio per Link IT srl',
     'website': 'http://apuliasoftware.it/',
     'license': 'AGPL-3',
     "depends": [
@@ -43,7 +44,6 @@
         'views/intrastat.xml',
         ],
     "demo": [],
-    "active": False,
-    "installable": False
+    "installable": True
 }
 
