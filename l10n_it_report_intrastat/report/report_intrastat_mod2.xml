@@ -43,7 +43,7 @@
             <th colspan="3" class="fondo">PERIODICITÀ ELENCO</th>
             <tr>
                 <td width="20%" rowspan="2">PERIODO DI RIFERIMENTO</td>
-                <td>MESE: <span class="font_bold" t-esc="o.period_number"/> ANNO: <span class="font_bold" t-esc="o.fiscalyear_id.code"/></td>
+                <td>MESE: <span class="font_bold" t-esc="o.period_number"/> ANNO: <span class="font_bold" t-esc="o.fiscalyear"/></td>
                 <td class="center" width="20%" rowspan="2"> NUMERO DI RIFERIMENTO <br/><span class="font_bold" t-esc="o.purchase_statement_sequence"/></td>
             </tr>
             <tr>

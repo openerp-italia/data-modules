@@ -2,27 +2,27 @@
 <openerp>
     <data>
 
-        <!-- 
+        <!--
         STATEMENT
          -->
         <record id="l10n_it_intrastat_statement.account_intrastat_statement_tree_view" model="ir.ui.view">
             <field name="name">account.intrastat.statement.tree.view</field>
             <field name="model">account.intrastat.statement</field>
             <field name="arch" type="xml">
-                
+
                 <tree string="INTRASTAT Statement" version="7.0">
                     <field name="number"/>
                     <field name="date"/>
                     <field name="sale"/>
                     <field name="purchase"/>
-                    <field name="fiscalyear_id"/>
+                    <field name="fiscalyear"/>
                     <field name="period_type"/>
                     <field name="period_number"/>
                     <field name="company_id" groups="base.group_multi_company"></field>
                 </tree>
             </field>
         </record>
-        
+
         <record id="l10n_it_intrastat_statement.account_intrastat_statement_form_view" model="ir.ui.view">
             <field name="name">account.intrastat.statement.form.view</field>
             <field name="model">account.intrastat.statement</field>
@@ -38,7 +38,7 @@
 	                            <field name="company_id" widget="selection"/>
 	                            <field name="vat_taxpayer" />
 	                            <field name="date"/>
-	                            <field name="fiscalyear_id"/>
+	                            <field name="fiscalyear"/>
 	                            <field name="period_type"/>
 	                            <field name="period_number" />
 	                        </group>
@@ -79,28 +79,28 @@
                                     </group>
                                     <group string="Services Refund - Section 4">
                                         <field name="sale_section4_operation_number" />
-                                        <field name="sale_section4_operation_amount" /> 
+                                        <field name="sale_section4_operation_amount" />
                                     </group>
                                 </group>
                                 <newline/>
                                 <notebook>
                                     <page string="Goods Sale - Section 1">
-                                        <field name="sale_section1_ids" nolabel="1" 
+                                        <field name="sale_section1_ids" nolabel="1"
                                         	context="{'statement_id': id}">
                                         </field>
                                     </page>
                                     <page string="Goods Refund - Section 2">
-                                        <field name="sale_section2_ids" nolabel="1" 
+                                        <field name="sale_section2_ids" nolabel="1"
                                         	context="{'statement_id': id}">
                                         </field>
                                     </page>
                                     <page string="Services Sale - Section 3">
-                                        <field name="sale_section3_ids" nolabel="1" 
+                                        <field name="sale_section3_ids" nolabel="1"
                                         	context="{'statement_id': id} ">
                                         </field>
                                     </page>
                                     <page string="Services Refund - Section 4">
-                                        <field name="sale_section4_ids" nolabel="1" 
+                                        <field name="sale_section4_ids" nolabel="1"
                                         	context="{'statement_id': id} ">
                                         </field>
                                     </page>
@@ -124,18 +124,18 @@
                                     </group>
                                     <group string="Services Refund Purchase - Section 4">
                                         <field name="purchase_section4_operation_number" />
-                                        <field name="purchase_section4_operation_amount" /> 
+                                        <field name="purchase_section4_operation_amount" />
                                     </group>
                                 </group>
                                 <newline/>
                                 <notebook>
                                 	<page string="Goods Purchase - Section 1">
-                                        <field name="purchase_section1_ids" nolabel="1" 
+                                        <field name="purchase_section1_ids" nolabel="1"
                                         	context="{'statement_id': id}">
                                         </field>
                                     </page>
                                     <page string="Goods Refund Purchase - Section 2">
-                                    	<field name="purchase_section2_ids" nolabel="1" 
+                                    	<field name="purchase_section2_ids" nolabel="1"
                                     		context="{'statement_id': id}">
                                         </field>
                                     </page>
@@ -145,18 +145,18 @@
                                         </field>
                                     </page>
                                     <page string="Services Refund Purchase - Section 4">
-                                    	<field name="purchase_section4_ids" nolabel="1" 
+                                    	<field name="purchase_section4_ids" nolabel="1"
                                     		context="{'statement_id': id}">
                                         </field>
                                     </page>
                                 </notebook>
-                                
+
                             </page>
                         </notebook>
                     </sheet>
                 </form>
             </field>
         </record>
-        
+
     </data>
 </openerp>
