@@ -41,6 +41,8 @@
 	                            <field name="fiscalyear_id"/>
 	                            <field name="period_type"/>
 	                            <field name="period_number" />
+	                            <field name="date_start"/>
+                                <field name="date_stop"/>
 	                        </group>
 	                        <group>
 	                        	<field name="number"/>
